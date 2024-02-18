@@ -1,0 +1,5 @@
+; $Id: $
+
+[PerlTidy]
+select = **/*.{pl,pm,t}
+argv = -i=2 -l=127 -cti=0 -nicb -ole=unix -noll -it=2 -pt=2 -ce -cb -sbt=2 -bt=1 -asc -sot -sct

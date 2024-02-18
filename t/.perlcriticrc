@@ -1,0 +1,21 @@
+# $Id: .perlcriticrc 50 2010-10-07 16:07:21Z stro $
+severity  = 3
+only      = 0
+force     = 0
+verbose   = 4
+top       = 50
+exclude   = RequireArgUnpacking|RequireLocalizedPunctuationVars|RequireExtendedFormatting|RequireCheckingReturnValueOfEval|ProhibitReusedNames|ProhibitImplicitNewlines|ProhibitPackageVars|ProhibitComplexMappings|RequireBriefOpen|ProhibitNoisyQuotes|ProhibitMagicNumbers|ProhibitPostfixControls|RequireCheckedClose|ProhibitUnlessBlocks|ProhibitMultiplePackages|ProhibitBuiltinHomonyms
+[InputOutput::RequireBriefOpen]
+lines           = 200
+[Subroutines::ProhibitExcessComplexity]
+max_mccabe      = 65
+[BuiltinFunctions::ProhibitStringyEval]
+allow_includes  = 1
+[ControlStructures::ProhibitDeepNests]
+max_nests       = 8
+[NamingConventions::ProhibitAmbiguousNames]
+forbid          = abstract bases close contract last left no record right second
+[BuiltinFunctions::ProhibitComplexMappings]
+max_statements  = 10
+[InputOutput::ProhibitBacktickOperators]
+only_in_void_context    = 1
